@@ -8,6 +8,7 @@ $mettallic: #9f842d;
   padding: 0;
 }
 nav {
+  color: $bg_primaryColor;
   font-size: 18px;
   font-weight: normal;
   background-color: $secondary_color;
@@ -36,9 +37,9 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  padding: 2rem;
+  padding: 1rem;
   color: $metallic_accent;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   font-weight: bold;
 }
@@ -280,11 +281,22 @@ p {
   outline: 0;
   box-shadow: none;
 }
+
 .accordion-body {
   background-color: $bg_primaryColor;
   color: $secondary_color;
   font-size: 16px;
   font-weight: bold;
+}
+.listaOrdenanzas {
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+  margin: 3rem;
+  padding: 2rem;
+  color: $secondary_color;
+  border-radius: 1rem;
+  background-color: $metallic_accent;
 }
 
 @media only screen and (max-width: 768px) {

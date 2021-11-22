@@ -3,6 +3,7 @@
   padding: 0; }
 
 nav {
+  color: #ebebeb;
   font-size: 18px;
   font-weight: normal;
   background-color: #2a2e37;
@@ -28,9 +29,9 @@ h1 {
   font-weight: bold; }
 
 h2 {
-  padding: 2rem;
+  padding: 1rem;
   color: #997d21;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   font-weight: bold; }
 
@@ -261,6 +262,16 @@ p {
   color: #2a2e37;
   font-size: 16px;
   font-weight: bold; }
+
+.listaOrdenanzas {
+  display: flex;
+  flex-flow: column;
+  align-content: flex-start;
+  margin: 3rem;
+  padding: 2rem;
+  color: #2a2e37;
+  border-radius: 1rem;
+  background-color: #997d21; }
 
 @media only screen and (max-width: 768px) {
   #grillaSesiones {
