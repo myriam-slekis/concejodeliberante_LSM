@@ -35,6 +35,13 @@ h1 {
   text-align: center;
   font-weight: bold;
 }
+h2 {
+  padding: 2rem;
+  color: $metallic_accent;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
 h4 {
   font-size: 1rem;
   padding: 1rem;
@@ -155,11 +162,10 @@ li {
   border-radius: 1rem;
 }
 .icons {
-  width: 1rem;
-  height: 1rem;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
 /*Grilla de autoridades*/
 #grid {
   display: grid;

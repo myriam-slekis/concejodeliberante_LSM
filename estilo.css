@@ -27,6 +27,13 @@ h1 {
   text-align: center;
   font-weight: bold; }
 
+h2 {
+  padding: 2rem;
+  color: #997d21;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold; }
+
 h4 {
   font-size: 1rem;
   padding: 1rem;
@@ -135,6 +142,11 @@ li {
   font-size: 14px;
   font-style: italic;
   border-radius: 1rem; }
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /*Grilla de autoridades*/
 #grid {
