@@ -1,0 +1,289 @@
+$bg_primaryColor: #ebebeb;
+$secondary_color: #2a2e37;
+$metallic_accent: #997d21;
+$mettallic: #9f842d;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-size: 18px;
+  font-weight: normal;
+  background-color: $secondary_color;
+  height: 20vh;
+}
+
+body {
+  background-color: $bg_primaryColor;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $bg_primaryColor;
+}
+
+a:hover {
+  color: $metallic_accent;
+}
+h1 {
+  padding: 2rem;
+  color: $metallic_accent;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 70%;
+  border-radius: 1rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h5 {
+  padding: 1rem;
+  font-size: 18px;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.pie {
+  background-color: $secondary_color;
+  color: $bg_primaryColor;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  height: 50vh;
+  gap: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.cover {
+  background-image: url(./fotos/Agujas.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(3px) saturate(70%) contrast(55%) brightness(140%);
+  color: $metallic_accent;
+  letter-spacing: 0.5rem;
+}
+
+.presentation {
+  font-weight: bold;
+  margin: 3rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(3px) saturate(70%) contrast(55%) brightness(140%);
+}
+
+.menu {
+  height: 15vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  @media (max-width: 760px) {
+    gap: 0.5rem;
+    font-size: 14px;
+  }
+}
+
+.bodyContact {
+  background-image: url(./fotos/lechuza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parrafoContact {
+  margin-top: 1rem;
+  backdrop-filter: blur(3 px) saturate(70%) contrast(55%) brightness(140%);
+  color: $secondary_color;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.formContact {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 25rem;
+  font-style: italic;
+  background-color: $bg_primaryColor;
+  border-radius: 1rem;
+  font-size: 14px;
+}
+
+.button {
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: $bg_primaryColor;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  border-radius: 1rem;
+}
+
+/*Grilla de autoridades*/
+#grid {
+  display: grid;
+  background-color: $secondary_color;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  align-content: flex-start;
+  text-align: center;
+  gap: 5rem;
+  color: $metallic_accent;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 4rem;
+
+  @media (max-width: 760px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.spotlight {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+p {
+  text-align: justify;
+  font-size: 14px;
+}
+.coverSesiones {
+  background-image: url(./fotos/sesion.jpeg);
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+.sesiones {
+  background-color: $secondary_color;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-content: center;
+  text-align: center;
+}
+
+#grillaSesiones {
+  display: grid;
+  grid-template-columns: repeat(5, 1.3fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background-color: $secondary_color;
+}
+
+.listaVideos {
+  padding: 1rem;
+  color: $secondary_color;
+  border-radius: 1rem;
+  background-color: $metallic_accent;
+}
+
+.actividades {
+  height: 50vh;
+  background-color: $secondary_color;
+}
+
+.coverComisiones {
+  background-image: url(./fotos/Comisiones.jpeg);
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.parrafoComisiones {
+  background-color: $bg_primaryColor;
+  backdrop-filter: blur(3 px) saturate(70%) contrast(55%) brightness(140%);
+  color: $secondary_color;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.accordion-button {
+  background-color: $metallic_accent;
+  color: $secondary_color;
+  font-weight: bold;
+  size: larger;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #9f842d;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-body {
+  background-color: $bg_primaryColor;
+  color: $secondary_color;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  #grillaSesiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+  }
+}
