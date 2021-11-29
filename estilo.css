@@ -3,20 +3,21 @@
   padding: 0; }
 
 nav {
-  color: #ebebeb;
+  color: #f1f9f0;
   font-size: 18px;
   font-weight: normal;
-  background-color: #2a2e37;
+  background-color: #0a0908;
   height: 20vh; }
 
 body {
-  background-color: #ebebeb;
+  background-color: #f1f9f0;
   font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
-  color: #ebebeb; }
+  color: #f1f9f0;
+  font-size: bolder; }
 
 a:hover {
   color: #997d21; }
@@ -53,8 +54,8 @@ li {
   list-style-type: none; }
 
 .pie {
-  background-color: #2a2e37;
-  color: #ebebeb;
+  background-color: #0a0908;
+  color: #f1f9f0;
   padding-bottom: 4rem;
   padding-top: 4rem;
   height: 50vh;
@@ -66,14 +67,14 @@ li {
   align-items: center; }
 
 .cover {
-  background-image: url(./fotos/Agujas.jpg);
+  background-image: url(./fotos/agujas.jpg);
   background-size: cover;
   background-position: bottom;
   height: 140vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .title {
   font-weight: bold;
@@ -105,54 +106,10 @@ li {
       gap: 0.5rem;
       font-size: 14px; } }
 
-.bodyContact {
-  background-image: url(./fotos/lechuza.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.parrafoContact {
-  margin-top: 1rem;
-  backdrop-filter: blur(3 px) saturate(70%) contrast(55%) brightness(140%);
-  color: #2a2e37;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  padding: 2rem; }
-
-.formContact {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 1rem;
-  gap: 1rem; }
-
-.input {
-  padding: 1rem;
-  width: 25rem;
-  font-style: italic;
-  background-color: #ebebeb;
-  border-radius: 1rem;
-  font-size: 14px; }
-
-.button {
-  width: 10rem;
-  padding: 0.5rem;
-  background-color: #ebebeb;
-  font-weight: bold;
-  font-size: 14px;
-  font-style: italic;
-  border-radius: 1rem; }
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 /*Grilla de autoridades*/
 #grid {
   display: grid;
-  background-color: #2a2e37;
+  background-color: #0a0908;
   padding-top: 8rem;
   padding-bottom: 8rem;
   grid-template-columns: repeat(3, 1fr);
@@ -192,7 +149,7 @@ p {
   padding: 2rem; }
 
 .sesiones {
-  background-color: #2a2e37;
+  background-color: #0a0908;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -200,6 +157,7 @@ p {
   align-content: center;
   text-align: center; }
 
+/*Grilla de links a videos de sesiones*/
 #grillaSesiones {
   display: grid;
   grid-template-columns: repeat(5, 1.3fr);
@@ -209,22 +167,48 @@ p {
   gap: 1rem;
   padding: 2rem;
   margin-bottom: 3rem;
-  background-color: #2a2e37; }
+  background-color: #f1f9f0; }
 
 .listaVideos {
   padding: 1rem;
-  color: #2a2e37;
+  color: #997d21;
   border-radius: 1rem;
-  background-color: #997d21; }
+  background-color: #0a0908; }
 
-.actividades {
-  height: 50vh;
-  background-color: #2a2e37; }
+/*Comisiones*/
+.parrafoComisiones {
+  background-color: #f1f9f0;
+  backdrop-filter: blur(2px) saturate(70%) contrast(45%) brightness(140%);
+  color: #0a0908;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bolder; }
+
+.accordion-header {
+  background-color: #997d21;
+  border-radius: 0.5rem; }
+
+.accordion-button {
+  background-color: #997d21;
+  color: #0a0908;
+  font-weight: bold; }
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #997d21; }
+
+.accordion-body {
+  background-color: #f1f9f0;
+  color: #0a0908;
+  font-size: 14px;
+  font-weight: bolder; }
 
 .coverComisiones {
-  background-image: url(./fotos/Comisiones.jpeg);
+  background-image: url(./fotos/comisiones.jpeg);
   background-size: cover;
-  background-color: gray;
+  background-color: #f1f9f0;
   background-blend-mode: luminosity;
   background-position: bottom;
   height: 90vh;
@@ -235,43 +219,60 @@ p {
   margin-top: 2rem;
   margin-bottom: 3rem; }
 
-.parrafoComisiones {
-  background-color: #ebebeb;
-  backdrop-filter: blur(3 px) saturate(70%) contrast(55%) brightness(140%);
-  color: #2a2e37;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: bolder; }
-
-.accordion-button {
-  background-color: #997d21;
-  color: #2a2e37;
-  font-weight: bold;
-  size: larger; }
-
-.accordion-button:focus {
-  z-index: 3;
-  border-color: #9f842d;
-  outline: 0;
-  box-shadow: none; }
-
-.accordion-body {
-  background-color: #ebebeb;
-  color: #2a2e37;
-  font-size: 16px;
-  font-weight: bold; }
-
+/*Listado de Ordenanzas y de Resoluciones - submenu*/
 .listaOrdenanzas {
   display: flex;
   flex-flow: column;
   align-content: flex-start;
   margin: 3rem;
   padding: 2rem;
-  color: #2a2e37;
   border-radius: 1rem;
-  background-color: #997d21; }
+  background-color: #0a0908; }
+
+/*contacto*/
+.bodyContact {
+  background-image: url(./fotos/lechuza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.parrafoContact {
+  margin-top: 2rem;
+  backdrop-filter: blur(3 px) saturate(70%) contrast(55%) brightness(140%);
+  color: #0a0908;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 2rem; }
+
+.formContact {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  gap: 1rem; }
+
+.input {
+  padding: 1rem;
+  width: 25rem;
+  font-style: italic;
+  background-color: #f1f9f0;
+  border-radius: 1rem;
+  font-size: 14px; }
+
+.button {
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: #f1f9f0;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  border-radius: 1rem; }
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 @media only screen and (max-width: 768px) {
   #grillaSesiones {
