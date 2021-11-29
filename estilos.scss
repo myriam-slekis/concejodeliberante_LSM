@@ -7,11 +7,7 @@ $metallic_accent: #997d21;
   padding: 0;
 }
 nav {
-  color: $bg_primaryColor;
-  font-size: 18px;
-  font-weight: normal;
   background-color: $secondary_color;
-  height: 20vh;
 }
 
 body {
@@ -39,7 +35,7 @@ h1 {
 h2 {
   padding: 1rem;
   color: $metallic_accent;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   font-weight: bold;
 }
@@ -106,16 +102,19 @@ li {
 }
 
 .menu {
-  height: 15vh;
+  height: 20vh;
+  width: auto;
+  margin-left: 0px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-items: stretch;
   justify-content: center;
   gap: 4rem;
   position: relative;
   @media (max-width: 760px) {
-    gap: 0.5rem;
-    font-size: 14px;
+    gap: 0.3rem;
+    font-size: 12px;
   }
 }
 
@@ -204,7 +203,6 @@ p {
   background-color: $metallic_accent;
   border-radius: 0.5rem;
 }
-
 .accordion-button {
   background-color: $metallic_accent;
   color: $secondary_color;

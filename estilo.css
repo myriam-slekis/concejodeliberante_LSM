@@ -3,11 +3,7 @@
   padding: 0; }
 
 nav {
-  color: #f1f9f0;
-  font-size: 18px;
-  font-weight: normal;
-  background-color: #0a0908;
-  height: 20vh; }
+  background-color: #0a0908; }
 
 body {
   background-color: #f1f9f0;
@@ -32,7 +28,7 @@ h1 {
 h2 {
   padding: 1rem;
   color: #997d21;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   font-weight: bold; }
 
@@ -94,17 +90,20 @@ li {
   backdrop-filter: blur(3px) saturate(70%) contrast(55%) brightness(140%); }
 
 .menu {
-  height: 15vh;
+  height: 20vh;
+  width: auto;
+  margin-left: 0px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-items: stretch;
   justify-content: center;
   gap: 4rem;
   position: relative; }
   @media (max-width: 760px) {
     .menu {
-      gap: 0.5rem;
-      font-size: 14px; } }
+      gap: 0.3rem;
+      font-size: 12px; } }
 
 /*Grilla de autoridades*/
 #grid {
@@ -193,11 +192,14 @@ p {
 .accordion-button {
   background-color: #997d21;
   color: #0a0908;
-  font-weight: bold; }
+  font-weight: bold;
+  border-style: none;
+  outline: none; }
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #997d21; }
+  border-color: #997d21;
+  outline: none; }
 
 .accordion-body {
   background-color: #f1f9f0;
@@ -231,7 +233,7 @@ p {
 
 /*contacto*/
 .bodyContact {
-  background-image: url(./fotos/lechuza.jpg);
+  background-image: url(./fotos/lechuza2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
