@@ -209,11 +209,14 @@ p {
   background-color: $metallic_accent;
   color: $secondary_color;
   font-weight: bold;
+  border-style: none;
+  outline: none;
 }
 
 .accordion-button:focus {
   z-index: 3;
   border-color: $metallic_accent;
+  outline: none;
 }
 .accordion-body {
   background-color: $bg_primaryColor;
@@ -250,7 +253,7 @@ p {
 /*contacto*/
 
 .bodyContact {
-  background-image: url(./fotos/lechuza.jpg);
+  background-image: url(./fotos/lechuza2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
