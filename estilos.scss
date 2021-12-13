@@ -83,7 +83,8 @@ li {
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 40px;
   text-align: center;
   margin: 3rem auto;
   padding: 2rem 4rem;
@@ -112,6 +113,18 @@ li {
   justify-content: center;
   gap: 4rem;
   position: relative;
+  @media (max-width: 760px) {
+    gap: 0.3rem;
+    font-size: 12px;
+  }
+}
+.navbar navbar-expand-lg {
+  @media (max-width: 760px) {
+    gap: 0.3rem;
+    font-size: 12px;
+  }
+}
+.container-fluid {
   @media (max-width: 760px) {
     gap: 0.3rem;
     font-size: 12px;
@@ -200,11 +213,11 @@ p {
   font-weight: bolder;
 }
 .accordion-header {
-  background-color: $metallic_accent;
+  background-color: $bg_primaryColor;
   border-radius: 0.5rem;
 }
 .accordion-button {
-  background-color: $metallic_accent;
+  background-color: $bg_primaryColor;
   color: $secondary_color;
   font-weight: bold;
   border-style: none;
@@ -213,7 +226,7 @@ p {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: $metallic_accent;
+  border-color: $bg_primaryColor;
   outline: none;
 }
 .accordion-body {

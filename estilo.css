@@ -73,7 +73,8 @@ li {
   margin-bottom: 2rem; }
 
 .title {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 40px;
   text-align: center;
   margin: 3rem auto;
   padding: 2rem 4rem;
@@ -104,6 +105,16 @@ li {
     .menu {
       gap: 0.3rem;
       font-size: 12px; } }
+
+@media (max-width: 760px) {
+  .navbar navbar-expand-lg {
+    gap: 0.3rem;
+    font-size: 12px; } }
+
+@media (max-width: 760px) {
+  .container-fluid {
+    gap: 0.3rem;
+    font-size: 12px; } }
 
 /*Grilla de autoridades*/
 #grid {
@@ -186,11 +197,11 @@ p {
   font-weight: bolder; }
 
 .accordion-header {
-  background-color: #997d21;
+  background-color: #f1f9f0;
   border-radius: 0.5rem; }
 
 .accordion-button {
-  background-color: #997d21;
+  background-color: #f1f9f0;
   color: #0a0908;
   font-weight: bold;
   border-style: none;
@@ -198,7 +209,7 @@ p {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #997d21;
+  border-color: #f1f9f0;
   outline: none; }
 
 .accordion-body {
