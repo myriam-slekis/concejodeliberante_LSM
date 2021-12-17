@@ -170,7 +170,7 @@ p {
 /*Grilla de links a videos de sesiones*/
 #grillaSesiones {
   display: grid;
-  grid-template-columns: repeat(5, 1.3fr);
+  grid-template-columns: repeat(5, 1.2fr);
   grid-template-rows: auto;
   justify-items: center;
   align-items: flex-start;
@@ -180,7 +180,7 @@ p {
   background-color: #f1f9f0; }
 
 .listaVideos {
-  padding: 1rem;
+  padding: 0.7rem;
   color: #997d21;
   border-radius: 1rem;
   background-color: #0a0908; }
@@ -196,13 +196,30 @@ p {
   font-size: 16px;
   font-weight: bolder; }
 
+.accordion {
+  margin: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem; }
+
+.accordion-item {
+  background-color: #997d21;
+  border: 2px solid #997d21;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem; }
+
 .accordion-header {
   background-color: #f1f9f0;
-  border-radius: 0.5rem; }
+  color: #997d21;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: #997d21; }
 
 .accordion-button {
   background-color: #f1f9f0;
-  color: #0a0908;
+  color: #997d21;
+  border-radius: 0.5rem;
   font-weight: bold;
   border-style: none;
   outline: none; }
@@ -218,10 +235,15 @@ p {
   font-size: 14px;
   font-weight: bolder; }
 
+.article {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: #997d21; }
+
 .coverComisiones {
   background-image: url(./fotos/comisiones.jpeg);
   background-size: cover;
-  background-color: #f1f9f0;
+  background-color: gray;
   background-blend-mode: luminosity;
   background-position: bottom;
   height: 90vh;
